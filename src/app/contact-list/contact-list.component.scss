@@ -1,0 +1,82 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 40px;
+    color: gray;
+}
+
+.button_new_contact {
+    float: right;
+    padding: 10px 16px;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table tbody {
+    color: rgb(54, 54, 54);
+}
+
+ table thead {
+    background-color: rgb(184, 181, 181);
+    color: rgb(48, 47, 47);
+ }
+
+table th,
+table td {
+    padding: 0.625em;
+    text-align: center;
+}
+
+table th{
+    font-size:  0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) { 
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: react(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+}

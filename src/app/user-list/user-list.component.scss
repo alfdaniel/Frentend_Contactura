@@ -1,0 +1,100 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 30px;
+    color: gray;
+}
+
+.button_new_user {
+    float: right;
+    padding: 10px;
+}
+
+// .button {
+//     display: flex;
+//     float: right;
+//     position: relative;
+//     padding: 16px;
+//     margin: 10px;
+// }
+
+.button_td{
+    padding: 10px;
+    margin: 5px;
+}
+
+table {
+    border: 1px soli black;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 0.625em;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table th{
+    font-size:  0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+table thead {
+    background-color: rgb(184, 181, 181);
+    color: rgb(48, 47, 47);
+ }
+
+ .th_vazio {
+    display: flex;
+ }
+
+.button_delete_edit {
+    margin: 5px;
+ }
+
+ table th{
+    font-size:  0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+ @media screen and (max-width: 600px) { 
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: react(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+}

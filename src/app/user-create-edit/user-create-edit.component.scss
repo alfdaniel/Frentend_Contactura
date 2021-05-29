@@ -1,0 +1,23 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 30px;
+    color:gray;
+}
+
+mat-card-content {
+    display: block;
+    justify-content: center;
+}
+
+mat-form-field {
+    width: 45%;
+    padding: 10px;
+}
+
+.button_new_contact {
+    float: left;
+    padding: 10px 16px;
+}
+
