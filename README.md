@@ -1,27 +1,10 @@
-# Contactura
+# Contactura Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.11.
 
-## Development server
+## Sistema de gestão de uma lista de contatos!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Segue abaixo algumas das telas do sistemas
 
-## Code scaffolding
+<img src="https://github.com/alfdaniel/Frontend_Contactura/blob/17a68f379e6a0f78d17cc2b147c8aa97976fd14c/tela%20usu%C3%A1rios2.jpg">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<img src="https://github.com/alfdaniel/Frontend_Contactura/blob/17a68f379e6a0f78d17cc2b147c8aa97976fd14c/tela%20usu%C3%A1rios.jpg">
