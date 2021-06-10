@@ -6,7 +6,7 @@
 </section>
 <section>
     <div class="button_new_user button_primay_customized">
-        <button mat-raised-button color="primary">Novo usuário</button>
+        <button mat-raised-button color="primary" (click)="goToCreate()">Novo Usuário</button>
     </div>
 </section>
 <section>
@@ -15,20 +15,23 @@
             <thead>
                 <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Username</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Ações</th>
+                    <th scope="col">Menu</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td data-label="Nome">Mark</td>
-                    <td data-label="Email">Mark</td>
-                    <td data-label="Status">Mark</td>
-                    <td>
-                    <button class="button_delete_edit"><i class="material-icons">delete</i></button>
-                    <button><i class="material-icons">edit</i></button>
+                <tr *ngFor="let user of userList">
+                    
+                    <td data-label="Nome">{{user.name}}</td>
+                    <td data-label="Username">{{user.username}}</td>
+                    <td data-label="Status">{{user.admin}}</td>
+                   
+                    <td data-label="Menu">
+                    <button class="button_delete_edit"><i class="material-icons" (click)="deleteUser(user.id)">delete</i></button>
+                    <button><i class="material-icons" (click)="editUser(user)">edit</i></button>
                     </td>
+
                 </tr>
             </tbody>
         </table>

@@ -5,15 +5,16 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { LoginComponent } from './login/login.component';
 import { UserCreateEditComponent } from './user-create-edit/user-create-edit.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { AuthGuard, AuthGuardAdmin } from './service/auth.guard';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'login', component:LoginComponent},
-  { path: 'contact', component:ContactCreateEditComponent},
-  { path: 'user', component:UserCreateEditComponent},
-  { path: 'contact_list', component:ContactListComponent},
-  { path: 'user_list', component:UserListComponent}
+  { path: 'contact', component:ContactCreateEditComponent, canActivate: [AuthGuardAdmin]},
+  { path: 'user', component:UserCreateEditComponent, canActivate: [AuthGuardAdmin]}, //AuthGuardAdmin
+  { path: 'contact_list', component:ContactListComponent, canActivate: [AuthGuard]},
+  { path: 'user_list', component:UserListComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

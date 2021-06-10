@@ -16,6 +16,10 @@ import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     ContactCreateEditComponent,
     UserListComponent,
     ContactListComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,12 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    
+    FormsModule,
+    ReactiveFormsModule,
+    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
