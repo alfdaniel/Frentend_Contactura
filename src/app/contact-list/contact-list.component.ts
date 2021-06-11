@@ -3,7 +3,7 @@ import { ContactService } from './../service/contact/contact.service';
 import { Contact } from './../model';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import { BehaviorSubject } from 'rxjs';
+
 
 @Component({
   selector: 'app-contact-list',

@@ -39,7 +39,7 @@ login(){
       data => {
         //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
         //console.log(atob(data));
-        //recebe o token e admin do backend (token:admin) usando a função split para desmenbrar o return. 
+        //recebe o token e admin do backend (token:admin). Usando a função split para desmenbrar o return. 
         //usando a função atob para decodficar o recebido do backend
         const tokenData = atob(data.split(':')[0])
         const username = tokenData.split(':')[0]
